@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  monitor:
+    build: .
+    image: jerr0328/wac
+    volumes:
+      - .:/usr/src/app/
+    env_file: .env
+    command: wac.monitor "https://www.google.com/"
+
+  store_results:
+    build: .
+    image: jerr0328/wac
+    volumes:
+      - .:/usr/src/app/
+    env_file: .env

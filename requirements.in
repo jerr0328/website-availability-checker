@@ -1,0 +1,8 @@
+click
+kafka-python
+msgpack
+# To keep things simple, using the binary version
+psycopg2-binary
+python-dotenv
+requests
+schedule
